@@ -64,7 +64,7 @@ app.get('/cumde/:id',async (req, res) => {
         throw new Error(`usuario no existente: ${ema} `)
     }else{
         await User.findByIdAndDelete(uid[0]._id).then(()=>{
-            console.log("eliminado");
+            alert("Usuario Eliminado Exitosamente")
         })
     }
     res.redirect('/')

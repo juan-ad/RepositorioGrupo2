@@ -1,2 +1,3 @@
 # RepositorioGrupo2
-Añadir usuario, eliminar, actualizar y consultar.
+Programa para añadir la funcionalidad de Añadir, eliminar, actualizar y consultar usuarios.
+Desarrollado con Mongodb y Javascript

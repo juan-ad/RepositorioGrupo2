@@ -57,6 +57,7 @@ app.get('/cumd/:id/:name/:lastname/:birth/:address',async (req, res) => {
     }
     res.redirect('/')
 })
+//función eliminar
 app.get('/cumde/:id',async (req, res) => {
     const ema=req.params.id
     const uid= await User.find({id:ema})

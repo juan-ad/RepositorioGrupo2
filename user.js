@@ -14,12 +14,12 @@ const User=Schema({
         type: String,
         require:true
     },
-    brith:{
+    birth:{
         type: String,
         require:true
     },
     address:{
-        type: Number,
+        type: String,
         require:true
     },
 })

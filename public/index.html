@@ -34,7 +34,7 @@
             </div>
     
             <div>Direeccion <small>Comuna (1 - 12)</small>
-                <input type="number" class="form-control mb-4" id="address" required>
+                <input type="number" class="form-control mb-4" id="address" required min="1" max="12">
             </div>
             <div style="display: flex; justify-content: space-between;">
                 <button class="btn btn-primary" onclick="location.href 
@@ -43,10 +43,16 @@
                 +'/'+document.getElementById('lastname').value
                 +'/'+document.getElementById('birth').value
                 +'/'+document.getElementById('address').value">Agregar</button>
-                <button class="btn btn-primary">Modificar</button>
                 <button class="btn btn-primary" onclick="location.href 
-                ='/cumde/'+document.getElementById('id').value">Eliminar</button>
-                <button class="btn btn-primary" onclick="wea(document.getElementById('id').value)">Consultar</button>
+                ='/cumd/'+document.getElementById('id').value
+                +'/'+document.getElementById('name').value
+                +'/'+document.getElementById('lastname').value
+                +'/'+document.getElementById('birth').value
+                +'/'+document.getElementById('address').value">Modificar</button>
+                <button class="btn btn-primary" onclick="location.href 
+                ='/cude/'+document.getElementById('id').value">Eliminar</button>
+                <button class="btn btn-primary" onclick="location.href 
+                ='/cuinfo/'+document.getElementById('id').value">Consultar</button>
             </div>
         </div>
         </div>

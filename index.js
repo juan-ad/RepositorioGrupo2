@@ -74,6 +74,7 @@ app.get('/cumde/:id',async (req, res) => {
 async function wea(Id){
     const uid= await User.find({id:Id})
     if(!uid){
+        console.log("Error: usuario no existe")
         throw new Error(`usuario no existente: ${uid} `)
     }else{
         alert('id: '+ uid.id, ' nombre: '+ uid.name+' apellido: '+uid.lastname+' nacimiento: '+uid.birth+' comuna: '+uid.address)
